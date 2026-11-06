@@ -1,0 +1,46 @@
+{
+  "name": "cron-lens",
+  "version": "1.0.0",
+  "description": "Cron expression engine, natural language explainer & multi-timezone schedule simulator.",
+  "type": "module",
+  "main": "src/explainer.js",
+  "types": "index.d.ts",
+  "bin": {
+    "cron-lens": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "demo": "node demo/run-demo.js",
+    "start": "node bin/cli.js"
+  },
+  "keywords": [
+    "cron",
+    "cron-parser",
+    "crontab",
+    "schedule",
+    "timezone",
+    "natural-language",
+    "developer-tools",
+    "cli"
+  ],
+  "author": "dani-s-h007 <shanusathar@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dani-s-h007/cron-lens.git"
+  },
+  "homepage": "https://github.com/dani-s-h007/cron-lens#readme",
+  "bugs": {
+    "url": "https://github.com/dani-s-h007/cron-lens/issues"
+  }
+}
