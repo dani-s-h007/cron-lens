@@ -7,7 +7,7 @@ import { explainCron } from '../src/explainer.js';
 import { getNextOccurrences, formatDateInTimezone } from '../src/simulator.js';
 import { naturalLanguageToCron } from '../src/from-natural.js';
 
-console.log('\n🚀 Starting cron-lens Interactive Demo...\n');
+console.log('\n=== [DEMO] Starting cron-lens ===\n');
 
 const prompt = 'every weekday at 2:30 pm';
 console.log(`1. Compiling English prompt to Cron: "${prompt}"`);
@@ -25,5 +25,5 @@ for (let i = 0; i < nextRuns.length; i++) {
   console.log(`  └─ New York: ${formatDateInTimezone(d, 'America/New_York')}`);
 }
 console.log('------------------------------------------------------------');
-console.log('🎉 Demo completed successfully!\n');
+console.log('[SUCCESS] Demo completed successfully.\n');
 

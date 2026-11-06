@@ -46,7 +46,7 @@ export async function runCli(argv = process.argv.slice(2)) {
       if (values.json) {
         console.log(JSON.stringify({ input: values.from, expression, explanation }, null, 2));
       } else {
-        console.log(`\n✨ Cron Expression: \x1b[32m\x1b[1m${expression}\x1b[0m`);
+        console.log(`\n Cron Expression: \x1b[32m\x1b[1m${expression}\x1b[0m`);
         console.log(`   English:        ${explanation}\n`);
       }
       return 0;
@@ -84,7 +84,7 @@ export async function runCli(argv = process.argv.slice(2)) {
     return 0;
   }
 
-  console.log('\n⏰ cron-lens Expression Inspector');
+  console.log('\n[cron-lens] Expression Inspector');
   console.log('========================================================================');
   console.log(`Expression: \x1b[32m\x1b[1m${cronExpr}\x1b[0m`);
   console.log(`Meaning:    \x1b[1m${explanation}\x1b[0m\n`);

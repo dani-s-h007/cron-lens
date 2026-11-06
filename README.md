@@ -1,4 +1,4 @@
-# cron-lens ⏰
+# cron-lens
 
 [![CI](https://github.com/dani-s-h007/cron-lens/actions/workflows/ci.yml/badge.svg)](https://github.com/dani-s-h007/cron-lens/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -11,7 +11,7 @@ Misconfigured cron schedules lead to midnight outages, runaway batch loops, and 
 
 ---
 
-## ✨ Features
+## Features
 
 - **Fluent English Explanations**: Translates 5-field expressions and aliases (`@daily`, `@weekly`, `@monthly`) into clear natural language.
 - **Natural Language Compiler (`--from`)**: Generates cron strings from conversational prompts (`--from "every weekday at 2:30 pm"` -> `30 14 * * 1-5`).
@@ -21,7 +21,7 @@ Misconfigured cron schedules lead to midnight outages, runaway batch loops, and 
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```bash
 # Run on-demand with npx
@@ -33,7 +33,7 @@ npm install -g cron-lens
 
 ---
 
-## 🛠️ CLI Usage
+## CLI Usage
 
 ### Explain an Expression
 ```bash
@@ -61,7 +61,7 @@ cron-lens "0 0 * * 0" --json
 
 ---
 
-## 💻 Programmatic TypeScript API
+## Programmatic TypeScript API
 
 ```typescript
 import { explainCron, getNextOccurrences, naturalLanguageToCron } from 'cron-lens';
@@ -78,7 +78,7 @@ console.log(cron); // => 0 9 * * 1-5
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 npm test
@@ -86,7 +86,7 @@ npm test
 
 ---
 
-## 📄 License
+## License
 
 MIT © Essentials Toolkit Authors
 
